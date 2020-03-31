@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1060842297716",
+    "firebase_url": "https://maluguel-3e928.firebaseio.com",
+    "project_id": "maluguel-3e928",
+    "storage_bucket": "maluguel-3e928.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060842297716:android:c784ad0738025bd6a4f421",
+        "android_client_info": {
+          "package_name": "com.prosolutionscwb1.maluguel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1060842297716-bfg8aau3n5mkmi8bq4dh61od1012joq0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHP23w7TRRI-gT1oSw99zzK1Q73DSEnrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060842297716-bfg8aau3n5mkmi8bq4dh61od1012joq0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
