@@ -19,8 +19,9 @@ export class CadastroPage implements OnInit {
     private http: HttpClient) { }
 
   email = this.getEmail();
-  contactField: null;
-  messageField: null;
+  nameField: null;
+  lastnameField: null;
+  phoneField: null;
 
   ngOnInit() {
   }
@@ -34,8 +35,10 @@ export class CadastroPage implements OnInit {
   sendForm(f: NgForm) {
     const url = environment.apiUrl + '/saveForm';
     const dataIn = {
-      contact: this.contactField,
-      message: this.messageField,
+      name: this.nameField,
+      lastname: this.lastnameField,
+      phone: this.phoneField,
+
       token: this.authentication.token
     };
     this.http.post(url, dataIn)

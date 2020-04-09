@@ -1,44 +1,43 @@
 import { Component } from '@angular/core';
-import {NgForm} from '@angular/forms';
 
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss']
 })
+
 export class AppComponent {
   public appPages = [
     {
       title: 'Home',
-      url: '/tab1',
-      icon: 'tab1'
+      url: '/home',
+      icon: 'home'
     },
     {
       title: 'Cadastro',
       url: '/cadastro,',
       icon: 'clipboard'
     },
-    {
-      title: 'Table 2',
-      url: '/tab2',
-      icon: 'list'
-    },
   ];
-
+  
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    private statusBar: StatusBar,
+    private router: Router
   ) {
     this.initializeApp();
   }
 
   initializeApp() {
     this.platform.ready().then(() => {
+      this.router.navigateByUrl('cadastro');
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });

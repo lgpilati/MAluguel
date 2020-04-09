@@ -12,14 +12,18 @@
   <form #f="ngForm" (submit)="sendForm(f)">
 
     <div class="ion-padding">
-      <ion-label position="stacked" color="primary">
-        Envie-nos seu feedback, dúvidas ou sugestões:</ion-label>
-      <ion-textarea name="messageField" rows="4" [(ngModel)]="messageField"></ion-textarea>
+      <ion-label position="stacked" color="primary">Nome</ion-label>
+      <ion-input name="nameField" type="text" [(ngModel)]="nameField"></ion-input>
     </div>
 
     <div class="ion-padding">
-      <ion-label position="stacked" color="primary">Informação de contato:</ion-label>
-      <ion-input name="contactField" type="text" [(ngModel)]="contactField"></ion-input>
+      <ion-label position="stacked" color="primary">Sobrenome</ion-label>
+      <ion-input name="lastnameField" type="text" [(ngModel)]="lastnameField"></ion-input>
+    </div>
+
+    <div class="ion-padding">
+      <ion-label position="stacked" color="primary">Telefone</ion-label>
+      <ion-input name="phoneField" type="text" [(ngModel)]="phoneField"></ion-input>
     </div>
 
     <div class="ion-padding">
