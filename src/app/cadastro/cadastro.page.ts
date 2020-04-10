@@ -5,12 +5,12 @@ import { HelperService } from '../services/helper/helper.service';
 import { AuthenticationService } from '../services/authentication/authentication.service';
 import { environment } from '../../environments/environment';
 
-
 @Component({
   selector: 'app-cadastro',
   templateUrl: './cadastro.page.html',
   styleUrls: ['./cadastro.page.scss'],
 })
+
 export class CadastroPage implements OnInit {
 
   constructor(

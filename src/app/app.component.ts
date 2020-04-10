@@ -4,7 +4,7 @@ import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
-import { Router } from "@angular/router";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -25,7 +25,7 @@ export class AppComponent {
       icon: 'clipboard'
     },
   ];
-  
+
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -37,9 +37,10 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.router.navigateByUrl('cadastro');
+      this.router.navigateByUrl('home');
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
   }
+
 }

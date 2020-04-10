@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:8100',
+  apiUrl: 'https://maluguel-3e928.web.app/',
   firebase: {
     apiKey: "AIzaSyBfr1BfBPDrcXGC5HC9hoeqM49UX1jGpUM",
     authDomain: "maluguel-3e928.firebaseapp.com",

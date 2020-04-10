@@ -23,7 +23,7 @@ export class AuthenticationService {
             res.user.getIdToken().then((token) => {
               console.log(token);
               this.token = token;
-              this.helper.presentAlert('Bem vindo ao App Basicão');
+              this.helper.presentAlert('Bem vindo ao Marido de Aluguel');
               this.navCtrl.navigateForward('/cadastro');
               return true;
             });
@@ -43,7 +43,7 @@ export class AuthenticationService {
             res.user.getIdToken().then((token) => {
               // console.log(token);
               this.token = token;
-              this.helper.presentAlert('Bem vindo ao App Basicão');
+              this.helper.presentAlert('Bem vindo ao Marido de Aluguel');
               this.navCtrl.navigateForward('/cadastro');
               return true;
             });
@@ -89,7 +89,7 @@ export class AuthenticationService {
   resetPassword(email) {
     firebase.auth().sendPasswordResetEmail(email)
       .then((res) => {
-        this.helper.presentAlert('Troca de senha enviada para seu email.');
+        this.helper.presentAlert('Senha enviada para seu email');
       })
       .catch((error) => {
         console.log(error);
