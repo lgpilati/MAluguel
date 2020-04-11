@@ -1,3 +1,18 @@
-.container {
+.contentd {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: auto;
     
+}
+
+.content {
+    --background: url('../../assets/wrenchm.jpg') no-repeat center center / cover !important;
+}
+
+.ion-input {
+    background-color: #696969 ;
 }

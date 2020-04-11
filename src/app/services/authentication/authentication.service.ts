@@ -24,7 +24,7 @@ export class AuthenticationService {
               console.log(token);
               this.token = token;
               this.helper.presentAlert('Bem vindo ao Marido de Aluguel');
-              this.navCtrl.navigateForward('/cadastro');
+              this.navCtrl.navigateForward('/jobs');
               return true;
             });
           }
@@ -44,7 +44,7 @@ export class AuthenticationService {
               // console.log(token);
               this.token = token;
               this.helper.presentAlert('Bem vindo ao Marido de Aluguel');
-              this.navCtrl.navigateForward('/cadastro');
+              this.navCtrl.navigateForward('/jobs');
               return true;
             });
           }

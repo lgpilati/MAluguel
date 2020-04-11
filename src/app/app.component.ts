@@ -24,6 +24,11 @@ export class AppComponent {
       url: '/cadastro,',
       icon: 'clipboard'
     },
+    {
+      title: 'Trabalhos',
+      url: '/jobs',
+      icon: 'cog-outline'
+    },
   ];
 
   constructor(
@@ -37,7 +42,6 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.router.navigateByUrl('home');
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });

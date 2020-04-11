@@ -1,31 +1,38 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>Pagina Inicial</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content>
-
+<ion-content class="content" scroll="false">
+<div class="contentd">
+  <ion-buttons slot="start">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>
   <br><br>
-
+  
   <form #f="ngForm" class="form" (submit)="validLogin(f)">
+    <img src="../../assets/customer.png" alt="" height="150" width="150" vertical-align="middle">
     <div class="ion-padding">
-      <ion-label position="stacked" color="primary">E-mail:</ion-label>
+      <ion-label position="floating" color="primary">E-mail:</ion-label>
       <ion-input type="text" name="email" minlength=3 [(ngModel)]="email" required>
       </ion-input>
     </div>
+
     <div class="ion-padding">
-      <ion-label position="stacked" color="primary">Senha:</ion-label>
+      <ion-label position="floating" color="primary">Senha:</ion-label>
       <ion-input type="password" name="password" minlength=6 [(ngModel)]="password" required>
       </ion-input>
     </div>
-    <ion-button type="submit" name="buttonLogin" expand="block">Entrar</ion-button>
-    <div>
-      <ion-button type="button" name="buttonCadastrar" expand="block">Cadastrar</ion-button>
-    </div>
-  </form>
 
+    <ion-button color="dark" type="submit" name="buttonLogin" expand="block">Entrar</ion-button>
+    <div>
+      <ion-text>Esqueci minha senha!</ion-text>
+    </div>
+
+    <div>
+      <p></p>
+      <ion-text>Não tem uma conta?</ion-text>
+
+      <ion-button color="" type="button" name="buttonCadastrar" expand="block">Cadastrar</ion-button>
+
+    </div>
+
+  </form>
+</div>
 </ion-content>
